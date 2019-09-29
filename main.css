@@ -1,0 +1,54 @@
+#keys{
+    margin-top: 50px;
+}
+
+#keys div div{
+    height: 50px;
+    width: 50px;
+    border: 2px solid lightpink;
+    border-radius: 5px;
+    margin: 0px;
+    padding: 8px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    color: lightgray;
+}
+
+#keys div div:hover{
+    background-color: #f0f0f0;
+}
+
+.current-key{
+    color: brown !important;
+    background-color: lightpink;
+    border-color: bisque;
+}
+
+.key-row{
+    margin-bottom: 4px;
+}
+
+#key-row2{
+    margin-left: 20px;
+}
+
+#key-row3{
+    margin-left: 40px;
+}
+
+#space{
+    margin-left: 105px !important;
+    width: 300px !important;
+}
+
+.container{
+    margin-top:20px;
+}
+
+textarea{
+    width:100%;
+    display: block;
+    
+    margin-bottom: 20px;
+}
