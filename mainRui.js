@@ -48,5 +48,5 @@ function playText(){
             resumeKeyColor(letterObj);   
         }, 100);
         i++;
-    }, 300);   
+    }, 200);   
 }

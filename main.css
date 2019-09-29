@@ -1,5 +1,13 @@
-#keys{
+#display{
+    min-height: 70px;
+    background-color: #eeeeee;
     margin-top: 50px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#keys{
+    margin-top: 20px;
 }
 
 #keys div div{
@@ -44,6 +52,7 @@
 
 .container{
     margin-top:20px;
+    max-width: 620px;
 }
 
 textarea{
