@@ -25,42 +25,28 @@ function resumeKeyColor(e){
        
 }
 
-//when press Play button, input text will be displayed at the top
+//when press Play button, retrieve charactor from textbox and update to <p> element
 function playText(){
     
-    //retrieve charactor from textbox and update to <p> element
-    var i = 0
-    var displayText = ' ';
+    var i = 0;
+    var displayText = '';
     var userText = $('#userText').val();
     
     var intervalID = setInterval(function(){
         
-        if (i<userText.length){
-            clearInterval(myInterval);
+        if (i==userText.length){
+            clearInterval(intervalID);
             return;
         }
-            displayText = $('#display p:first').text();
-            
-            var eObj = {key:userText[i]};
-            changeKeyColor(eObj);
-            setTimeout(function(){resumeKeyColor(eObj);},200);
-            //setTimeout(resumeKeyColor,200);
-            
-            
-            displayText += userText[i];
-            $('#display p:first').text(displayText);
-        } else { 
-            clearInterval(intervalID); 
-        }
+        displayText += userText[i];
+        $('#display p').text(displayText);
         
+        var letterObj = {key:userText[i]};
+        changeKeyColor(letterObj);
+
+        setTimeout(function(){
+            resumeKeyColor(letterObj);   
+        }, 100);
         i++;
-        
-    }, 300);
-    
-    
-    
-    
-    
-    
-    
+    }, 300);   
 }
